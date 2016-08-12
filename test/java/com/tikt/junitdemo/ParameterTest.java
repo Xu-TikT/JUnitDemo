@@ -24,10 +24,6 @@ public class ParameterTest {
      * 2.声明变量来存放预期值和结果值
      * 3.声明一个返回值为Collection的公共静态方法，并使用@Parameters进行修饰
      * 4.为测试类声明一个带有参数的公共构造函数，并在其中为之声明变量赋值
-     *
-     *
-     *
-     *
      */
 
 
@@ -37,8 +33,6 @@ public class ParameterTest {
 
     @Parameterized.Parameters
     public static Collection<Object[]> t() {
-
-
         return Arrays.asList(new Object[][]{
                 {3, 1, 2},
                 {4, 2, 2}
@@ -47,6 +41,9 @@ public class ParameterTest {
 
     public ParameterTest(int expected, int input1, int input2) {
 
+        /**
+         * 这里的预期值和输入值要与定义的测试数据的顺序对应
+         */
         this.expected = expected;
         this.input1 = input1;
         this.input2 = input2;

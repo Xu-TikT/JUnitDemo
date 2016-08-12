@@ -32,6 +32,7 @@ public class CalculateTest {
     @Test
     public void testSubtract() throws Exception {
         assertEquals(3,new Calculate().subtract(5,2));
+
     }
 
     @Test

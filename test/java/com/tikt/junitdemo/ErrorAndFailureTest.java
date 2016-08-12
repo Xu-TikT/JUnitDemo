@@ -1,5 +1,6 @@
 package com.tikt.junitdemo;
 
+import com.tikt.junitdemo.Calculate;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
